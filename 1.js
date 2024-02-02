@@ -67,5 +67,4 @@ setInterval(()=>ws.send("from-client-"+Date.now()),3000);
       return send.apply(this, arguments);
   };
 
-})(XMLHttpRequest);
-})();
+})(XMLHttpRequest)
