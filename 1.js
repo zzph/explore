@@ -49,6 +49,7 @@ setInterval(()=>ws.send("from-client-"+Date.now()),3000);
               if ( this.responseType != 'blob' && this.responseText) {
                   // responseText is string or null
                   try {
+                    console.log('xhr-req' + this._url, window.location)
 
                       // here you get RESPONSE TEXT (BODY), in JSON format, so you can use JSON.parse
                       var arr = this.responseText;
